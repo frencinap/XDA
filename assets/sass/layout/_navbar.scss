@@ -1,40 +1,64 @@
+
 .navbar {
-    width: 100%;
+    grid-area: area1;
+    background-color:$white;
+    overflow: hidden;
     display: flex;
-    height: 60px;
-    box-sizing: border-box;
-    position: fixed;
-    border: none;
-    
+    width: 100%;
+    justify-content: space-between;
+
     &__logo {
-       vertical-align: middle;
-        height: 100%;
+        vertical-align: middle;
+        height: 10vh;
         width: 10%;
         text-align: center;
         background-color: $smoky-black;
-        color: $white;
-        font: $old-standard;
-        font-weight: $old-std-regular;
-        font-size: $medium;
-
-        
+        padding-left: .5rem;
+        padding-right: .5rem;
+        padding-top: .15rem;
+        padding-bottom: .15rem;
+        box-sizing: border-box;
     }
 
-    &__menu {
+    &__list {
         padding-right: 2rem;
         align-items: center;
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
+        padding-top: 1rem;
     }
 
-    &__item {
+    &__link {
         text-decoration: none;
         cursor: pointer;
         padding-right: 1rem;
-        color: $smoky-black;
-        font: $raleway;
-        font-weight: $raleway-bold;
-        font-size: $small;
+        transition: all .3s;
+        
+        &:hover{
+            color: $granite-grey;
+        }
+    }
+
+    &__button {
+        color:$smoky-black;
+        display: none;
+    }
+        
+}
+
+
+@media (max-width:$tablet-view) {
+     .navbar{
+        position: fixed;
+    }  
+}
+
+@media screen and (max-width:$mobile-view) {
+    .navbar__list {
+        display: none;
+    }
+
+    .navbar__button {
+        display: block;
+        padding-right: 1rem;
+        padding-top: 1rem;
     }
 }

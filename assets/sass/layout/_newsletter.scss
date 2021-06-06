@@ -1,0 +1,35 @@
+.newsletter{
+    grid-area: area3;
+    box-sizing: border-box;
+    border: none;
+    background-color: $smoky-black;
+    padding-top: 0;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 85% 15%;
+    grid-template-areas: 
+    "area6 area7";
+    
+    &__body{
+        grid-area: area6;
+        padding-left: 3rem;
+        padding-right: 2rem;
+       
+    }
+    &__button {
+        grid-area: area7;
+        background-color: $white;
+        padding-top: 5.5rem;
+        padding-left: .2rem;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;    
+    } 
+
+}
+
+@media (max-width:$tablet-view) {
+    .newsletter {
+        grid-template-columns: 90% 10%;
+    }
+}

@@ -1,0 +1,33 @@
+.main{
+    grid-area: area2;
+    box-sizing: border-box;
+    border: none;
+    padding-left: 3rem;
+    padding-right: 3rem;    
+
+    &__title {
+        padding-bottom: .5rem;
+    }
+
+    &__description {
+        padding-bottom: .5rem;
+    }
+
+  
+}
+
+@media (max-width:$tablet-view) {
+    .main {
+        
+        padding-top: 1rem;
+        padding-right: 10rem;
+    }
+}
+
+@media (max-width:$mobile-view) {
+    .main {
+        
+        padding-top: 1rem;
+        padding-right: 6rem;
+    }
+}

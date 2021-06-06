@@ -1,9 +1,15 @@
+//abstracts
+@import 'abstracts/mixins';
 @import 'abstracts/variables';
-
+//base
 @import 'base/restet';
 @import 'base/typography';
-
+//components
 @import 'components/buttons';
 @import "components/input";
-
+//layout
+@import 'layout/container';
 @import 'layout/navbar';
+@import 'layout/main';
+@import 'layout/newsletter';
+@import 'layout/image';

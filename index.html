@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:regular,italic,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
@@ -12,19 +14,53 @@
     <title>XDA</title>
 </head>
 <body>
-    <nav class="navbar">
-        <section class="navbar__logo">
-            <h2 class="navbar__logo-name">XDA</h2>
+    <div class="container">
+        <!-- Barra de navegacion -->
+        <div class="navbar">
+            <section class="navbar__logo">
+                <h2 class="navbar__logo-brand">XDA</h2>
+            </section>
+            <section class="navbar__list" id="Topnav">
+            <a class="navbar__link" href="#home" >Mujer</a>
+            <a class="navbar__link" href="#news">Hombre</a>
+            <a class="navbar__link" href="#contact">Accesorios</a>
+            <a class="navbar__link" href="#about">Blog</a>
+            </section>
+            <!-- No supe como ahcer el menu desplegable, me confundi con las clases de bem -->
+            <a href="javascript:void(0);" class="navbar__button" id="navbar__button">
+                <i class="fa fa-bars"></i>
+              </a>
+          </div>
+        <!-- Parrafo descriptivo -->
+        <section class="main">
+            <h1 class="main__title">
+                LOREM IPSUM AD VALOREM
+            </h1>
+            <p class="main__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab non saepe, quis maiores eligendi recusandae illum nesciunt modi quibusdam nihil, error praesentium consequatur quam. Nostrum cupiditate a tempore quam numquam!
+            </p>
+            <button type="button" class="main__button">Ir a la tienda</button>
         </section>
-        <section class="navbar__menu">
-            <a class="navbar__item" href="#woman">Mujer</a>
-            <a class="navbar__item" href="#man">Hombre</a>
-            <a class="navbar__item" href="#accesories">Accesorios</a>
-            <a class="navbar__item" href="#blog">Blog</a>
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="newsletter__body">
+            <h4 class="newsletter__title">
+                Newsletter
+            </h4>
+            <h5 class="newsletter__subtitle">
+                Correo Electrónico<br>
+                <input class="newsletter__input" type="text" placeholder="Ingresa tu correo electrónico">
+            </h5>
+            </div>
+            <div class="newsletter__button">
+            <button type="button" class="newsletter__button-input">Suscribir</button>
+            </div>
         </section>
-    </nav>
-    <section class="main">
-        
-    </section>
+        <!-- Imagen -->
+        <section class="image"> 
+        </section>   
+    </div>
+    <!-- Script navbar -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

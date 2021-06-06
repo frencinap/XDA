@@ -1,0 +1,38 @@
+.main__button{
+    background-color: $white;
+    padding: .3rem 1rem;
+    border: 2px solid $granite-grey;
+    font: $raleway;
+    font-weight: $raleway-bold;
+    font-size: $small;
+
+    &:hover {
+        border: 2px solid $quicksilver;
+        transition: all .2s;
+    }
+}
+
+.newsletter__button-input {
+    background-color: $white;
+    border: none;
+    transform: rotate(90deg);
+    font: $old-standard;
+    font-weight: $old-std-regular;
+    font-size: $large;
+    display: flex;
+    
+    &:hover {
+        color: $granite-grey;
+        transition: all .3s;
+    
+    }
+}
+
+@media (max-width:$tablet-view) {
+    .main__button{
+        font-size: $x-small;
+        padding: .2rem .8rem;
+        border: 1px solid $granite-grey;
+        font-weight: $raleway-regular;
+    }
+}

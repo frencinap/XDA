@@ -1,0 +1,18 @@
+.newsletter__input {
+    width: 15rem;
+    font: $raleway-bold;
+    font-size: $medium;
+}
+
+@media (max-width:$tablet-view) {
+    .newsletter__input {
+        width: 25rem;
+    }
+}
+
+@media (max-width:$mobile-view) {
+    .newsletter__input {
+        width: 20rem;
+    }
+}
+

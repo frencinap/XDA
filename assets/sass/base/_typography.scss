@@ -2,10 +2,57 @@ h1 {
     font: $old-standard;
     font-weight: $old-std-bold;
     font-size: $xxx-large;
+    color: $smoky-black;
+}
+
+h2 {
+    color: $white;
+    font: $old-standard;
+    font-weight: $old-std-regular;
+    font-size: $large;
+}
+
+h4{
+    color: $white;
+    font: $old-standard;
+    font-weight: $old-std-regular;
+    font-size: $x-large;
+}
+
+h5 {
+    color: $white;
+    font: $old-standard;
+    font-weight: $old-std-regular;
+    font-size: $medium;
+}
+a {
+    color: $smoky-black;
+    font: $raleway;
+    font-weight: $raleway-regular;
+    font-size: $small;
 }
 
 p {
     font: $raleway;
     font-weight: $raleway-regular;
-    font-size: $medium;
+    font-size: $small;
+    color: $quicksilver;
+}
+
+@media (max-width:$tablet-view) {
+    h1{
+        font-size: $xx-large;
+    }
+    p{
+        font-size: $small;
+    }
+}
+
+@media (max-width:$mobile-view) {
+    h1{
+        font-size: $x-large;
+    }
+    p{
+        font-size: $small;
+    }
 }

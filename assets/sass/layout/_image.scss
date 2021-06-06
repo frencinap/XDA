@@ -1,0 +1,16 @@
+.image{
+    grid-area: area4;
+    box-sizing: border-box;
+    max-height: 90vh;
+    overflow: hidden;
+    background-image: url(/assets/img/imagen1.png);
+    background-size: cover;
+       
+}
+
+@media (max-width:$tablet-view) {
+    .image {
+        background-position-y: 25%;
+
+    }
+}
